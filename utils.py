@@ -10,9 +10,9 @@ from io import BytesIO
 
 def get_edited_image(raw_image):
     # 在百度云中申请，每天各接口有 500 次调用限制.
-    APP_ID = '24948404'
-    API_KEY = 'EkvToGU9o6GA1e4RqsBouCNE'
-    SECRET_KEY = 'LWAlynHgSKRNF7O1zPuX0z6ZUA7ZSRwE'
+    APP_ID = '********'
+    API_KEY = '****************'
+    SECRET_KEY = '***************************'
     client = AipBodyAnalysis(APP_ID, API_KEY, SECRET_KEY)
     """ 带参数调用人像分割 """
     seg_res = client.bodySeg(raw_image)  # Base64编码后的png格式图片
